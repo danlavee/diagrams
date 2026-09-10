@@ -31,11 +31,11 @@ Write every tag that has something to say; skip the rest.
 
 Still no paint. Open the nodes the storyboard requires: `<g id="…" sdl:kind="…">`. Node-local facts are attributes of that element. Nested `<g>` is containment.
 
-A relationship is `<sdl:rel>` on the lowest parent that contains all of its participants. It names the participants and the fact. Prefer predicates the next phase can discharge by copying and offsets; otherwise write the intent on that parent.
+A relationship is `<sdl:rel>` on the lowest parent that contains all of its participants. It is a semantic fact that must keep holding. It names the participants and the fact. Prefer predicates the next phase can discharge by copying and offsets; otherwise write the intent on that parent.
 
 ## 3. Paint
 
-Marks inside those groups. Discharge every `<sdl:rel>` into positions and sizes on the nodes it names; marks use those values. Then look at the rendered picture. Where a relationship promised equality, alignment, order, or grouping, the marks match it exactly.
+Marks inside those groups. Discharge every `<sdl:rel>` into positions and sizes on the nodes it names; marks use those values. Then look at the rendered picture. The marks match every relationship's fact exactly.
 
 ## Change
 
