@@ -11,7 +11,7 @@ Work three phases in order, each writing into that file before the next starts. 
 
 A fact about one node lives on that node. A fact about more than one node lives on the lowest parent that contains all of them. Picture facts live only on the marks. SDL holds kind, relationships, and the brief.
 
-When placing nodes, or when paint would add an extra joint, an occupancy fight, or a meeting the relationships do not settle, read `references/composition.md` before finishing composition.
+When placing nodes, or when a visible picture fact would have no home, or when paint would leave leftover geometry, read `references/composition.md` before finishing composition.
 
 ## 1. Storyboard
 
@@ -33,7 +33,7 @@ Write every tag that has something to say; skip the rest.
 
 Still no paint. Open the nodes the storyboard requires: `<g id="…" sdl:kind="…">`. Node-local meaning the renderer does not own is an attribute of that element. Nested `<g>` is containment.
 
-A relationship is `<sdl:rel>` on the lowest parent that contains all of its participants. It is a semantic fact that must keep holding. It names the participants and the fact. Prefer predicates the next phase can discharge by copying and offsets; otherwise write the intent on that parent. Copy, offset, and gap stay on that relationship.
+A relationship is `<sdl:rel>` on the lowest parent that contains all of its participants. It is a fact the picture must keep holding. It names the participants and the fact. Prefer predicates the next phase can discharge by copying and offsets; otherwise write the intent on that parent. Copy, offset, and gap stay on that relationship.
 
 Follow `references/composition.md`.
 
